@@ -1,0 +1,123 @@
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    height: 100%;
+    max-width: 300px; /* Set a max-width for responsiveness */
+    margin: 0 auto;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+form {
+    min-width: 300px;
+    margin: auto;
+    background-color: rgb(243, 242, 244);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(189, 98, 232, 0.728);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+fieldset {
+    border: 2px solid rgba(186, 73, 243, 0.84);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px; 
+}
+
+legend {
+    font-weight: bold;
+    text-align: left;
+    color: rgb(15, 14, 14);
+}
+
+label {
+    display: inline;
+    margin-top: 10px;
+    color: rgb(15, 14, 14);
+}
+
+input, textarea {
+    width: 100%;
+    padding: 4px;
+    margin-top: 4px;
+    border: 1px solid rgba(186, 73, 243, 0.84);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    display: block;
+    width: 260px;
+    height: auto;
+    padding: 10px;
+    background-color: rgba(216, 132, 255, 0.728);
+    color: rgb(15, 14, 14);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+button:hover {
+    background-color: rgba(186, 73, 243, 0.84);
+}
+
+/* Resume Output Section */
+#resumeOutput {
+    min-width: 260px;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid rgba(186, 73, 243, 0.84);
+    border-radius: 8px;
+    background-color: rgb(243, 242, 244);
+    box-shadow: 0 4px 8px rgba(189, 98, 232, 0.728);
+    color: rgb(15, 14, 14);
+    /* making the resume editable */
+    outline: none; 
+}
+
+
+.profilePicture {
+    display: block;
+    margin: 0 auto;
+    border: 2px solid rgba(186, 73, 243, 0.84);
+    box-shadow: 0 4px 8px rgba(189, 98, 232, 0.728);
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* Media Queries for Smaller Screens */
+@media only screen and (max-width: 600px) {
+    body {
+        padding: 10px;
+        max-width: 100%;
+    }
+
+    form {
+        min-width: 100%; /* Full width on smaller screens */
+        padding: 15px;
+    }
+
+    button {
+        width: 100%; 
+    }
+
+    #resumeOutput {
+        min-width: 100%; 
+        padding: 15px;
+    }
+
+    .profilePicture {
+        width: 100px; 
+        height: 100px;
+    }
+}
